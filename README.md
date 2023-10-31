@@ -1,40 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# HackerRank Challenge: Memory Game
 
-First, run the development server:
+## Challenge Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+You are given a React application that implements a Memory Game. The game consists of a grid of colored blocks that need to be matched in pairs. Each block has a pair color, and the order of the blocks is randomized. The player can click on two blocks, and if they match in color, they are considered a pair. The game keeps track of the number of matches and tries. The goal is to match all the blocks in as few tries as possible. Unflipped blocks should be colored using slate.
+
+### Task
+
+Your task is to complete and enhance the existing code to meet the following requirements:
+
+1. Ensure that the game logic is functioning correctly, allowing the player to select two blocks and determining if they match.
+
+2. Display a message when the player successfully matches all pairs with the following conditions:
+   - If the player completes the game perfectly (minimum tries), display a message: "Congratulations, you have completed the game perfectly!"
+   - If the player completes the game but with more tries, display a message: "Congratulations, you have completed the game!"
+
+3. Implement a "Reset" button that allows the player to restart the game at any time. The "Reset" button should be disabled when there are no moves to reset.
+
+4. Enhance the game to provide a clear display of the number of matches and tries to the player. The game should accurately keep track of the following:
+   - The number of matched pairs.
+   - The total number of tries made by the player.
+
+### Input
+
+- You will work with the provided React application and the `blocks` array containing block colors.
+
+### Output
+
+- Your solution should modify the existing application to meet the requirements specified above.
+
+### Sample Input
+
+```javascript
+const blocks = [
+  'red', 'yellow', 'green', 'indigo',
+  'orange', 'red', 'yellow', 'green',
+  'indigo', 'orange', 'cyan', 'pink',
+  'stone', 'cyan', 'pink', 'stone'
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Sample Output
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Your modified application should allow users to play the Memory Game with the specified requirements.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Figure 1 : Complete Flow
+![Unperfect Flow](./public/complete.gif)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Figure 2 : Perfect Flow
+![Perfect Flow](./public/perfect.gif)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Note:**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- You can modify the existing code and add new components as necessary to meet the requirements.
+- Ensure that the game is user-friendly and provides feedback to the player.
+- Feel free to optimize and refactor the code as needed.
+- Feel free to open [TailwindCss Documentation](https://tailwindcss.com/docs/utility-first)
+- Feel free to open [MDN Documentation](https://developer.mozilla.org/en-US/)
+- Feel free to open [ReactJs Documentation](https://react.dev/reference/react)
+- Feel free to open [NextJs Documentation](https://nextjs.org/docs)
